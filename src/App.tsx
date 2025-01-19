@@ -1,10 +1,13 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+function App() {
   return (
-    <>
-      <div className="bg-blue-500 text-white p-4">Hello, Tailwind!</div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<h1>Hello</h1>} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
